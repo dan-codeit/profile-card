@@ -1,0 +1,201 @@
+:root {
+  --bg: hsl(0, 0%, 86%);
+  --white-100: hsl(0, 0%, 89%);
+  --bg2: hsl(232, 32%, 14%);
+  --bg-primary: hsl(201, 100%, 35%);
+  --bg-hover: hsl(201, 65%, 51%);
+  --tt: hsl(0, 0%, 88%);
+  --tyll: hsl(0, 0%, 33%);
+  --message: hsl(55, 82%, 46%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--bg2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg);
+  max-width: 18rem;
+  border-radius: 0rem 0.1rem 3rem 0.1rem;
+    padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+  gap: 1rem;
+  margin: 0 0.9rem;
+}
+
+.name-job-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border: 0.1rem solid var(--white-100);
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.profile-picture {
+  width: auto;
+  height: 7rem;
+  object-fit: cover;
+  margin-top: 1.5rem;
+}
+
+h2.full-name {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.divide-line {
+  width: 50rem;
+  height: 0.12rem;
+  background-color: var(--tt);
+}
+
+p.job-title {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+p.short-bio {
+  font-size: 0.8rem;
+  color: var(--tyll);
+  line-height: 1.4;
+}
+
+p.location,
+p.email {
+  font-size: 0.6rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--white-100);
+  font-weight: bold;
+  background-color: var(--bg-primary);
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: var(--bg-hover);
+}
+
+.utc-time {
+  font-size: 0.85rem;
+  color: var(--tyll);
+}
+
+.contacts-wrapper {
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+  background-color: var(--bg2);
+  width: 100rem;
+  padding: 0.8rem;
+  color: var(--tt);
+}
+
+.thanks {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--bg);
+  margin-bottom: 0.2rem;
+}
+.available-message {
+  font-size: 0.85rem;
+  color: var(--message);
+}
+
+.greeting-wrapper {
+  display: none;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--tyll);
+  position: absolute;
+  top: 32rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+
+.hobbies, .dislikes {
+  background-color: #fff;
+  text-align: left;
+border-radius: 0.3rem;
+  width: 10rem;
+    transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+ul {
+ list-style-type: square;
+  padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    color: rgb(47, 47, 47);
+}
+
+.headers {
+  background-color: rgb(175, 175, 175);
+  display: flex;
+  justify-content: center;
+width: 100%;
+font-size: 0.6rem;
+color: rgb(40, 40, 40);
+padding: 0.3rem;
+
+}
+
+
