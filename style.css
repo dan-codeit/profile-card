@@ -104,6 +104,7 @@ p.email {
 }
 
 .social-links a {
+  font-size: 0.6rem;
   text-decoration: none;
   color: var(--white-100);
   font-weight: bold;
@@ -170,7 +171,7 @@ p.email {
 
 
 .hobbies, .dislikes {
-  background-color: #fff;
+  background-color: #e8e8e8;
   text-align: left;
 border-radius: 0.3rem;
   width: 10rem;
