@@ -27,8 +27,9 @@ document.querySelector("form").addEventListener("submit", (e) => {
       "Message too short";
   }
 
-  if (valid) {
-    successMsg.textContent = "Form submitted successfully!";
-    e.target.reset();
-  }
+if (valid) {
+  successMsg.textContent = "Form submitted successfully!";
+  successMsg.focus();
+  e.target.reset();
+}
 });
