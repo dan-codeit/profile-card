@@ -1,4 +1,4 @@
-# Simple Profile Card
+# Simple Profile Card with Multi-Page Web Application
 ## Description
 
 This project is a simple profile card showcasing basic information about an individual. The card includes a profile picture, name, job title, a brief bio, hobbies, dislikes, location, email address, and social media links. Additionally, it displays the current time in UTC. The layout is responsive and can be easily styled or customized further.
@@ -38,3 +38,15 @@ You can easily customize the profile card by editing:
 - Social Media Links: Update the href attributes of the <a> tags with your social media profiles.
 - Profile Picture: Change the image by replacing the jo-copy.jpg file with your own.
 - Styling: Update style.css to modify the colors, fonts, and layout to match your desired theme.
+
+
+
+
+
+
+
+
+
+
+
+

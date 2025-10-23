@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Frontend Wizards</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css" />
+
+  
+</head>
+<body>
+  <main>
+ <div id="nav-bar"></div>
+
+    <h1>Contact Us</h1>
+<div class="form-wrapper">
+    
+    <form id="contactForm" novalidate>
+      <!-- Full Name -->
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" data-testid="test-contact-name" aria-describedby="test-contact-error-name" placeholder="Enter fullname"/>
+        <span class="error" id="test-contact-error-name"></span>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" data-testid="test-contact-email" aria-describedby="test-contact-error-email" placeholder="Enter email address" />
+        <span class="error" id="test-contact-error-email"></span>
+      </div>
+
+      <!-- Subject -->
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="test-contact-error-subject" placeholder="Message title"/>
+        <span class="error" id="test-contact-error-subject"></span>
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" data-testid="test-contact-message" aria-describedby="test-contact-error-message" placeholder="Write something"></textarea>
+        <span class="error" id="test-contact-error-message"></span>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+      <!-- Success message -->
+      <p id="test-contact-success" class="success" role="alert"></p>
+    </form>
+</div>
+  </main>
+
+  <script src="contact.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

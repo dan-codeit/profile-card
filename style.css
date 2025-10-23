@@ -1,5 +1,5 @@
 :root {
-  --bg: hsl(0, 0%, 86%);
+  --bg: hsl(0, 0%, 93%);
   --white-100: hsl(0, 0%, 89%);
   --bg2: hsl(232, 32%, 14%);
   --bg-primary: hsl(201, 100%, 35%);
@@ -18,11 +18,21 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--bg2);
+  min-height: 100vh;
+  min-width: 100vw;
+
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50rem;
+
+
+}
+
+.sub-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
 }
 
 .profile-card {
@@ -36,7 +46,7 @@ body {
   text-align: center;
   overflow: hidden;
   gap: 1rem;
-  margin: 0 0.9rem;
+
 }
 
 .name-job-title-wrapper {
@@ -171,6 +181,10 @@ p.email {
 
 
 .hobbies, .dislikes {
+  display: flex;
+gap: 0;
+margin: 0;
+  flex-direction: column;
   background-color: #e8e8e8;
   text-align: left;
 border-radius: 0.3rem;
@@ -182,6 +196,7 @@ border-radius: 0.3rem;
 }
 
 ul {
+  
  list-style-type: square;
   padding: 0.5rem 2rem;
     font-size: 0.8rem;

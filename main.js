@@ -1,6 +1,8 @@
 const timeDisplay = document.getElementById("display-time"),
   profileCard = document.querySelector(".profile-card"),
-  greetingMessage = document.querySelector(".greeting-wrapper");
+  greetingMessage = document.querySelector(".greeting-wrapper"),
+  navBar = document.getElementById("nav-bar");
+
 
 
 setInterval(() => {
@@ -17,4 +19,11 @@ setInterval(() => {
 }, 1000);
 
 
+  async function loadNav() {
+    const response = await fetch("nav.html");
+    const html = await response.text();
+    navBar.innerHTML = html;
+  }
+
+  loadNav();
 
